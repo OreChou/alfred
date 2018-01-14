@@ -6,7 +6,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/chj?characterEncoding=utf8&useSSL=false&tinyInt1isBit=false&autoReconnect=true
+    url: jdbc:mysql://localhost:3306/alfred?characterEncoding=utf8&useSSL=false&tinyInt1isBit=false&autoReconnect=true
     username: root
     password: root
 

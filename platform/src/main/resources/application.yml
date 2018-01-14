@@ -40,22 +40,22 @@ spring:
 #      min-idle: 2       # 连接池中的最小空闲连接
 
 # mybatis-plus
-#mybatis-plus:
-#  mapper-locations: classpath:/mapper/*/*.xml
-#  typeAliasesPackage: com.chj.domain.*
-#  typeEnumsPackage: com.chj.domain.com.orechou.alfred.enums
-#  global-config:
-#    id-type: 2
-#    field-strategy: 2
-#    auto-set-db-type: true
-#    db-column-underline: true
-#    refresh-mapper: true
-#    logic-delete-value: 0
-#    logic-not-delete-value: 1
-#    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
-#  configuration:
-#    map-underscore-to-camel-case: true
-#    cache-enabled: false
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  typeAliasesPackage: com.orechou.alfred.domain.*
+#  typeEnumsPackage: com.orechou.alfred.domain.enums
+  global-config:
+    id-type: 2
+    field-strategy: 2
+    auto-set-db-type: true
+    db-column-underline: true
+    refresh-mapper: true
+    logic-delete-value: 0
+    logic-not-delete-value: 1
+    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
 
 #swagger:
 #  enabled: true

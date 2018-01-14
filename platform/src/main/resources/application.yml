@@ -1,0 +1,93 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 10
+  connection-timeout: 5000
+  context-path: /alfred
+
+spring:
+  application:
+    name: platform
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+  # 环境 dev|com.orechou.alfred.test|pro
+  profiles:
+    active: dev
+  # jackson时间格式化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  http:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+  resources:
+    #static-locations: # 指定静态资源的路径
+    static-locations: classpath:/static/,classpath:/views/,classpath:/META-INF/resources/
+#  redis:
+#    host: localhost
+#    port: 6379
+#    password:
+#    database: 0
+#    timeout: 6000  # 连接超时时长（毫秒）
+#    pool:
+#      max-active: 100   # 连接池最大连接数（使用负值表示没有限制）
+#      max-wait: -1      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+#      max-idle: 10      # 连接池中的最大空闲连接
+#      min-idle: 2       # 连接池中的最小空闲连接
+
+# mybatis-plus
+#mybatis-plus:
+#  mapper-locations: classpath:/mapper/*/*.xml
+#  typeAliasesPackage: com.chj.domain.*
+#  typeEnumsPackage: com.chj.domain.com.orechou.alfred.enums
+#  global-config:
+#    id-type: 2
+#    field-strategy: 2
+#    auto-set-db-type: true
+#    db-column-underline: true
+#    refresh-mapper: true
+#    logic-delete-value: 0
+#    logic-not-delete-value: 1
+#    sql-injector: com.baomidou.mybatisplus.mapper.LogicSqlInjector
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    cache-enabled: false
+
+#swagger:
+#  enabled: true
+#  title: 车后家运营平台API文档
+#  description: 车后家运营平台API文档
+#  version: 1.0-beta
+#  contact:
+#    name: panbo
+#    email: 281543673@qq.com
+##  base-package: com.chj.platform.controller
+#  #base-path: /
+#  # exclude-path:
+#  global-operation-parameters[0]:
+#    name: token
+#    description: 认证令牌
+#    required: true
+#    parameterType: header
+#    modelRef: string
+#  global-operation-parameters[1]:
+#      name: Content-Type
+#      description: Content-Type:application/json
+#      required: true
+#      parameterType: Content-Type
+#      modelRef: string
+#  docket:
+#    system:
+#      title: system
+#      basePackage: com.chj.platform.controller.system
+#    core:
+#      title: core
+#      basePackage: com.chj.platform.controller.core
+#    business:
+#      title: business
+#      basePackage: com.chj.platform.controller.business
+

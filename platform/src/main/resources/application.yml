@@ -57,23 +57,23 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     cache-enabled: false
 
-#swagger:
-#  enabled: true
-#  title: 车后家运营平台API文档
-#  description: 车后家运营平台API文档
-#  version: 1.0-beta
-#  contact:
-#    name: panbo
-#    email: 281543673@qq.com
-##  base-package: com.chj.platform.controller
-#  #base-path: /
-#  # exclude-path:
-#  global-operation-parameters[0]:
-#    name: token
-#    description: 认证令牌
-#    required: true
-#    parameterType: header
-#    modelRef: string
+swagger:
+  enabled: true
+  title: 车后家运营平台API文档
+  description: 车后家运营平台API文档
+  version: 1.0-beta
+  contact:
+    name: OreChou
+    email: 327344576@qq.com
+#  base-package: com.chj.platform.controller
+  #base-path: /
+  # exclude-path:
+  global-operation-parameters[0]:
+    name: token
+    description: 认证令牌
+    required: true
+    parameterType: header
+    modelRef: string
 #  global-operation-parameters[1]:
 #      name: Content-Type
 #      description: Content-Type:application/json

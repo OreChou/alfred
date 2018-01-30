@@ -49,11 +49,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.spring4all</groupId>-->
-            <!--<artifactId>spring-boot-starter-swagger</artifactId>-->
-            <!--<version>${spring-boot-starter-swagger.version}</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>spring-boot-starter-swagger</artifactId>
+            <version>${spring-boot-starter-swagger.version}</version>
+        </dependency>
         <!-- mybatis-plus begin -->
         <dependency>
             <groupId>mysql</groupId>
